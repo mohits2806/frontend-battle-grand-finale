@@ -5,6 +5,6 @@ export default function Jobs() {
   document.title = "Linkwitch - Jobs Search";
 
   return (
-    <div>Jobs</div>
+    <h1 style={{textAlign:'center', margin:'3rem'}}>This Page is Under Development! Kindly Visit after sometime</h1>
   )
 }

@@ -5,6 +5,6 @@ export default function EditProfile() {
   document.title = "Linkwitch - Edit Profile (John Doe)";
 
   return (
-    <div>EditProfile</div>
+    <h1 style={{textAlign:'center', margin:'3rem'}}>This Page is Under Development! Kindly Visit after sometime</h1>
   )
 }

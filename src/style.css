@@ -360,16 +360,19 @@ hr{
         width: 70%;
     }
 
-    #feed .box1{
+    .box1{
       display: none;
     }
 
-    #feed .container{
-      margin: 0;
+    .container{
       flex-direction: column;
     }
 
-    #feed .box2, .box3{
-      width: 100%;
+    .box2, .box3{
+      width: 99%;
+    }
+
+    .box3{
+      margin-top: 1rem;
     }
 }
