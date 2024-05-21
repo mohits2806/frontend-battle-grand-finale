@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../style.css';
 
 export default function Feed() {
 
@@ -6,7 +7,9 @@ export default function Feed() {
 
   return (
     <>
-      <h1>Feed</h1>
+      <section id="feed">
+        <div className='container'></div>
+      </section>
     </>
   )
 }

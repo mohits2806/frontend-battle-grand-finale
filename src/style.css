@@ -24,12 +24,12 @@
     /* Light Theme */
     --font-color: var(--twitch-black);
     --bg-color: var(--twitch-white);
-    --nav-link-color: var(--linkedin-light-gray);
-    --nav-link-hover: var(--linkedin-dark-gray);
+    --nav-link-hover: var(--twitch-light-violet);
+    --nav-link-color: var(--twitch-dark-violet);
     --nav-bg: var(--linkedin-white-gray);
-    --search-bg: var(--linkedin-light-gray);
-    --search-bg: var(--linkedin-light-gray);
-    --slider-bg: var(--linkedin-light-gray);
+    --search-bg: var(--linkedin-dark-gray);
+    --search-pcolor: var(--linkedin-white-gray);
+    --slider-bg: var(--linkedin-dark-gray);
 }
 
 [data-theme="dark"] {
@@ -39,8 +39,8 @@
     --nav-link-hover: var(--twitch-dark-violet);
     --nav-bg: var(--linkedin-dark-gray);
     --search-bg: var(--linkedin-light-gray);
-    --search-bg: var(--linkedin-light-gray);
-    --slider-bg: var(--linkedin-black);
+    --search-pcolor: var(--linkedin-dark-gray);
+    --slider-bg: var(--linkedin-light-gray);
 }
 
 body {
@@ -90,7 +90,7 @@ body {
 }
 
 .switch input:checked + .slider {
-  background-color: #2b2b2b;
+  background-color: var(--slider-bg);
 }
 
 .switch input:checked + .slider:before {
@@ -130,13 +130,14 @@ nav img{
     border-radius: .5rem;
 }
 
-nav .search-box{
-    background: var(--search-bg);
+nav .search-box input{
+    /* background: var(--search-bg); */
     padding-left: 10px;
 }
 
 nav .search-box::placeholder{
-    background: var(--search-pcolor);
+    background: var(--search-bg);
+    color: var(--search-pcolor);
 }
 
 .navbar{
@@ -153,6 +154,10 @@ nav .search-box::placeholder{
 .navbar li{
     margin-right: 20px;
 }
+
+
+
+
 
 
 /* Mobile Responsiveness */
