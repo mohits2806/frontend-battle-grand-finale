@@ -12,7 +12,9 @@
     --twitch-dark-violet: #6441a5;
     --twitch-light-violet: #b9a3e3;
     --twitch-black: #262626;
+    --twitch-electric-violet: #9146ff;
     --twitch-white: #f1f1f1;
+    --twitch-titan-white: #f0f0ff;
     
     /* LinkedIn Color Palette */
     --linkedin-blue: #0077b5;
@@ -42,6 +44,9 @@
     --search-bg: var(--linkedin-light-gray);
     --search-pcolor: var(--linkedin-dark-gray);
     --slider-bg: var(--linkedin-light-gray);
+    .interaction img{
+      filter: invert(1);
+    }
 }
 
 body {
@@ -290,6 +295,43 @@ hr{
   width: 20%;
 }
 
+#feed{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.degree{
+  font-size: 0.8rem;
+}
+
+#feed .box2 .post .up{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+#feed .box2 .post-name{
+  font-size: 1rem;
+}
+
+#feed .box2 .headline{
+  font-size: 0.8rem;
+}
+
+#feed .box2 .card{
+  margin: 0.5rem 0;
+}
+
+#feed .box2 .count{
+  margin: .2rem;
+  display: flex;
+  align-items: center;
+}
+
 
 
 
@@ -327,7 +369,7 @@ hr{
       flex-direction: column;
     }
 
-    #feed .box2{
+    #feed .box2, .box3{
       width: 100%;
     }
 }
