@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function EditProfile() {
 
-  document.title = "Linkwitch - Edit Profile (Mohit Shaharwale)";
+  document.title = "Linkwitch - Edit Profile (John Doe)";
 
   return (
     <div>EditProfile</div>

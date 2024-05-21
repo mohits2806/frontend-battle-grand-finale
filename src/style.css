@@ -33,6 +33,7 @@
 }
 
 [data-theme="dark"] {
+  /* dark theme */
     --font-color: var(--linkedin-white-gray);
     --bg-color: #000000;
     --nav-link-color: var(--twitch-light-violet);
@@ -107,6 +108,7 @@ body {
 
 .nav-links{
     color: var(--nav-link-color);
+    cursor: pointer;
 }
 
 .nav-links:hover{
@@ -130,31 +132,120 @@ nav img{
     border-radius: .5rem;
 }
 
-nav .search-box input{
-    /* background: var(--search-bg); */
-    padding-left: 10px;
+.search-box{
+  background: var(--search-bg);
+  width: 10%;
+  height: 3rem;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--bg-color);
+  font-size: 20px;
 }
 
 nav .search-box::placeholder{
+  font-size: 1rem;
+  font-weight: bold;
     background: var(--search-bg);
     color: var(--search-pcolor);
 }
 
 .navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 20px 50px;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .navbar li{
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
+hr{
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--search-bg);
+}
+
+.highlight{
+  color: var(--nav-link-color);
+}
+
+.container{
+  padding: .2rem;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-top: .5rem;
+  width: 99%;
+
+}
+
+.box{
+  border-radius: 20px;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1{
+  display: flex;
+  flex-direction: column;
+  grid-area: box1;
+  background: var(--nav-bg);
+  color: var(--font-color);
+  width: 19%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.box1 #cover-img{
+  width: 100%;
+  padding-top: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.box1 #pfp{
+  position: relative;
+  top: -30px;
+  margin: auto;
+  margin-bottom: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.box1 h2{
+  margin-top: -1rem;
+}
+
+.box2{
+  grid-area: box2;
+  width: 55%;
+  color: var(--font-color);
+}
+
+.card{
+  background: var(--nav-bg);
+  color: var(--font-color);
+  width: 100%;
+}
+
+.box3{
+  background: var(--nav-bg);
+  color: var(--font-color);
+  grid-area: box3;
+  width: 20%;
+}
 
 
 
